@@ -1,2 +1,2 @@
 # dotfiles
-respository with my vimrc, plugins and themes
+respository with my cfgs, vimrc, plugins and themes
