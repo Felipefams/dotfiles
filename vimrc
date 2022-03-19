@@ -18,9 +18,13 @@ colorscheme sublimemonokai
 " Sets background to be black
 "highlight Normal ctermfg=grey ctermbg=black
 
-set expandtab
+" makes you need to delete the whole space manually after a tab
+" set expandtab
+
+" the size of your tab
 set shiftwidth=4
 set tabstop=4
+" no nedd to explain these right?
 set number
 set autoindent
 set relativenumber
@@ -66,8 +70,8 @@ set t_RV=
 " https://github.com/junegunn/vim-plug
 call plug#begin('~/.vim/vim-plug-pluggins')
 
-Plug 'gmarik/vundle'
-Plug 'dag/vim-fish'
+"Plug 'gmarik/vundle'
+"Plug 'dag/vim-fish'
 
 " Bottom status line 
 Plug 'vim-airline/vim-airline'
@@ -75,6 +79,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 " Folder access within vim
 Plug 'preservim/NERDTree'
+Plug 'jiangmiao/auto-pairs'
 
 " Adds vim text objects such as (C)hange (A)n (A)rgument - caa, 
 " and (D)elete (I)nner (A)rgument - dia for function definitions.
