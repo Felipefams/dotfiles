@@ -2,6 +2,7 @@
 "this file is a compilation of other files + my own preferences & needs, feel free to copy
 syntax on
 
+
 " Currently disabled cannot find a way to make line transparent.
 " set cursorline                                     " highlight current line
 " hi CursorLine term=none cterm=none ctermbg=LightGray      " adjust color
@@ -13,7 +14,7 @@ set nocompatible
 filetype off
 
 " Look in ~/.vim/colors for other color schemes
-colorscheme sublimemonokai 
+colorscheme sublimemonokai
 
 " Sets background to be black
 "highlight Normal ctermfg=grey ctermbg=black
@@ -24,16 +25,18 @@ colorscheme sublimemonokai
 " the size of your tab
 set shiftwidth=4
 set tabstop=4
+" utf-8 support for the emmet
+set encoding=utf-8
 " no nedd to explain these right?
 set number
 set autoindent
 set relativenumber
 
 " Backup to ~/.tmp (in my case, .vim-tmp)
-set backup 
+set backup
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set backupskip=/tmp/*,/private/tmp/*
-set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp 
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set writebackup
 " you can also use:
 " in case you want to save the backup files inside your .vim
@@ -73,15 +76,17 @@ call plug#begin('~/.vim/vim-plug-pluggins')
 "Plug 'gmarik/vundle'
 "Plug 'dag/vim-fish'
 
-" Bottom status line 
+" Bottom status line
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 " Folder access within vim
 Plug 'preservim/NERDTree'
+" Auto brackets
 Plug 'jiangmiao/auto-pairs'
-
-" Adds vim text objects such as (C)hange (A)n (A)rgument - caa, 
+" Emmet
+Plug 'ycm-core/YouCompleteMe'
+" Adds vim text objects such as (C)hange (A)n (A)rgument - caa,
 " and (D)elete (I)nner (A)rgument - dia for function definitions.
 Plug 'vim-scripts/argtextobj.vim'
 
